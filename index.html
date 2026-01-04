@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing You, Mano - A Dark Romance</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background: linear-gradient(to bottom, #1a1a1a, #2d1b2d);
+            color: #e0c3c3;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff6b9d;
+            text-shadow: 2px 2px 4px #000;
+            letter-spacing: 2px;
+            animation: heartbeat 2s infinite; /* Subtle pulsing */
+        }
+        .message {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 107, 157, 0.3);
+            animation: fadeIn 3s ease-in-out; /* Fade in on load */
+        }
+        .highlight {
+            color: #ff6b9d;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #000;
+            animation: pulse 2s infinite; /* Gentle pulsing */
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #b0a0a0;
+            animation: fadeIn 4s ease-in-out; /* Delayed fade-in */
+        }
+        .rose {
+            font-size: 2em;
+            margin: 20px 0;
+            animation: float 6s infinite ease-in-out; /* Floating effect */
+        }
+        /* Floating roses animation */
+        .floating-rose {
+            position: absolute;
+            font-size: 1.5em;
+            color: #ff6b9d;
+            opacity: 0.7;
+            animation: floatUp 8s infinite linear;
+        }
+        .floating-rose:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .floating-rose:nth-child(2) { left: 50%; animation-delay: 2s; }
+        .floating-rose:nth-child(3) { left: 80%; animation-delay: 4s; }
+        /* Candle flicker effect */
+        .candle {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+        .flame {
+            width: 10px;
+            height: 20px;
+            background: radial-gradient(circle, #ff4500, #ffa500);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            animation: flicker 2s infinite alternate;
+        }
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(100vh); opacity: 1; }
+            100% { transform: translateY(-100px); opacity: 0; }
+        }
+        @keyframes flicker {
+            0% { transform: scale(1) rotate(-1deg); }
+            50% { transform: scale(1.1) rotate(1deg); }
+            100% { transform: scale(1) rotate(-1deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating roses background -->
+    <div class="floating-rose">🌹</div>
+    <div class="floating-rose">🌹</div>
+    <div class="floating-rose">🌹</div>
+    
+    <div class="container">
+        <header>
+            <h1>Missing You, Mano</h1>
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+        </header>
+        
+        <div class="message">
+            <p class="rose">🌹</p>
+            <p>My dearest <span class="highlight">Mano</span>,</p>
+            <p>In the shadowed depths of this long-distance night, where miles stretch like endless veils between us, my heart aches with a longing that knows no dawn. Every moment without you feels like a gothic tale unfolding in the dark—passionate, intense, and filled with the bittersweet sting of absence. I miss the way your laughter echoes in my dreams, the warmth of your touch that lingers like a forbidden secret, and the way your eyes, deep as midnight pools, pull me into a romance that defies the light.</p>
+            <p>Days blur into nights, and I find myself wandering through memories of us, like a lover lost in a haunted castle. The world outside is cold and indifferent, but in my mind, you're the flame that flickers against the void. I miss your voice, soft and sultry, whispering promises that time and distance can't erase. I miss the stolen glances, the shared silences that spoke volumes, and the way our souls intertwined in a dance of shadows and desire.</p>
+            <p>Oh, Mano, how I yearn for the day when these barriers crumble, and I can hold you close once more. Until then, know that my love for you burns eternal, a dark romance that thrives in the unknown. You're my everything, my muse in this endless twilight. Come back to me soon, my love.</p>
+            <p>Forever yours,<br>Your devoted heart</p>
+            <p class="rose">🌹</p>
+        </div>
+        
+        <footer>
+            <p>"In the darkness, love finds its truest light." – A whisper from afar</p>
+        </footer>
+    </div>
+</body>
+</html>
